@@ -14,7 +14,7 @@ def canUnlockAll(boxes):
     while len(unseen) > 0:
         present = unseen.pop()
 
-        if not present or present >= len(boxes) or present < 0:
+        if present in seen:
             continue
 
         seen.add(present)
