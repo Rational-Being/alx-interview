@@ -8,7 +8,16 @@ def minOperations(n):
     """
     get the least # operations needed
     """
-    if n <= 1:
+    if n < 0:
         return 0
 
-    return 3 + minOperations(n - 2)
+    else:
+        ops = 0
+        while n > 0:
+            if n % 2 == 0:
+                n = n // 2
+            else:
+                n = n - 1
+                ops += 1
+        return ops
+
