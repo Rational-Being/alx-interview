@@ -32,13 +32,13 @@ try:
         fin += size
         count += 1
 
-    if count == 10:
-        count = 0
-        print(f"File size: {fin}")
+        if count == 10:
+            count = 0
+            print(f"File size: {fin}")
 
-        for k, v in sorted(statcd.items()):
-            if v != 0:
-                print(f"{key}: {value}")
+            for k, v in sorted(statcd.items()):
+                if v != 0:
+                    print(f"{key}: {value}")
 except Exception as e:
     pass
 
