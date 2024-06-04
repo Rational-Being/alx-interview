@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-gicen a oiule of coins of different values, determine the fewest numnber of 
+gicen a oiule of coins of different values, determine the fewest numnber of
 coins needed to meat a given amouint of total
 """
 
@@ -16,16 +16,6 @@ def makeChange(coins, total):
     change = 0
     amount = 0
     coins.sort(reverse=True)
-
-    # coins = sorted(coins)[::-1]
-
-    l = len(coins)
-
-    # while l > 0:
-    #     tmp = coins[0]
-    #     if change + tmp > total:
-    #         coins.pop(0)
-    #         continue
 
     for coin in coins:
         while change + coin <= total:
