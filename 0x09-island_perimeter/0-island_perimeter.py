@@ -3,9 +3,10 @@
 this code hleps me get ready of interview
 """
 
+
 def island_perimeter(grid):
     """
-    funtion returns the perimeter of the island 
+    funtion returns the perimeter of the island
     as described in 0-main.py
     """
 
@@ -18,9 +19,9 @@ def island_perimeter(grid):
             if grid[i][j] == 1:
                 perimeter += 4
 
-                if j < columns -1 and grid[i][j + 1] == 1:
+                if j < columns - 1 and grid[i][j + 1] == 1:
                     perimeter -= 2
 
-                if i < row - 1 and grid[i +1][j] == 1:
+                if i < row - 1 and grid[i + 1][j] == 1:
                     perimeter -= 2
     return perimeter
