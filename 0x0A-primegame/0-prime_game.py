@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 """
-
+Prime game - ALX interview
 """
 
 def isWinner(x, nums):
     """
-
+    funtion is set to deterimine the winner of the game
     """
     if x <= 0 or not nums or x != len(nums):
         return None
